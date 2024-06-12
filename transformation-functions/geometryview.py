@@ -33,6 +33,9 @@ def point_intersection(point1, point2):
     Args:
     line1: A list of three numbers representing the homogeneous coordinates of a point (zx, zy, z) from ax + by + c = 0.
     line2: A list of three numbers representing the homogeneous coordinates of the second point (zx, zy, z) from ax + by + c = 0.
+    
+    Returns:
+    A tuple of three numbers representing the coeeficients of the line equation (a, b, c).
     '''
     (a,b,c) = np.cross(point1, point2)
     return (a,b,c)
